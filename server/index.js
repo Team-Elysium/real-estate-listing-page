@@ -19,10 +19,19 @@ let staticPath = path.join(__dirname, '../public');
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 
+// Use EJS templating
+app.set('view engine', 'ejs');
 
 /////////////////////
-//  Serve Static Site
+//  Render index.html from Template
+app.get('/:id(\\d+)/', (req, res) => {
+  res.render('../templates/index.ejs');
+});
+
+/////////////////////
+//  Serve Other Static Assets
 app.use('/:id(\\d+)/', express.static(staticPath));
+app.use('/', express.static(staticPath));
 
 ////////////////////////////////////////
 //  API Call Redirection
@@ -45,10 +54,6 @@ app.get(service_urls.carousel.LOCAL_API_TARGET, (req, res) => {
 // Description
 
 // Similar Listings
-
-
-// Catch any other requests
-app.use('/', express.static(staticPath));
 
 ////////////////////////////////////////
 //  Instantate Server
