@@ -50,11 +50,47 @@ app.get(service_urls.carousel.LOCAL_API_TARGET, (req, res) => {
     });
 });
 
-// Details
+// // Details
+// app.get(service_urls.details.LOCAL_API_TARGET, (req, res) => {
+//   const itemId = req.params.id;
+//   axios
+//     .get(service_urls.details.API_URL + itemId)
+//     .then(result => {
+//       res.json(result.data);
+//     })
+//     .catch(err => {
+//       console.log('Error fetching from details API:', err);
+//       res.sendStatus(500);
+//     });
+// });
 
-// Description
+// // Description
+// app.get(service_urls.description.LOCAL_API_TARGET, (req, res) => {
+//   const itemId = req.params.id;
+//   axios
+//     .get(service_urls.description.API_URL + itemId)
+//     .then(result => {
+//       res.json(result.data);
+//     })
+//     .catch(err => {
+//       console.log('Error fetching from description API:', err);
+//       res.sendStatus(500);
+//     });
+// });
 
-// Similar Listings
+// // Similar Listings
+// app.get(service_urls.similar.LOCAL_API_TARGET, (req, res) => {
+//   const itemId = req.params.id;
+//   axios
+//     .get(service_urls.similar.API_URL + itemId)
+//     .then(result => {
+//       res.json(result.data);
+//     })
+//     .catch(err => {
+//       console.log('Error fetching from similar listings API:', err);
+//       res.sendStatus(500);
+//     });
+// });
 
 ////////////////////////////////////////
 //  Instantate Server
