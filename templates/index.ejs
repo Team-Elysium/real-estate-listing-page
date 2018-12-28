@@ -9,7 +9,10 @@
     <link rel="icon" href="assets/images/favicon.ico">
 
     <!-- Component Stylesheets -->
-    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:3010/carousel-style.css" />
+    <link rel="stylesheet" type="text/css" href="<%- carousel.STYLE_URL %>" />
+    <link rel="stylesheet" type="text/css" href="<%- details.STYLE_URL %>" />
+    <link rel="stylesheet" type="text/css" href="<%- description.STYLE_URL %>" />
+    <link rel="stylesheet" type="text/css" href="<%- similar.STYLE_URL %>" />
 
   </head>
   <body>
@@ -21,8 +24,7 @@
     </header>
     <nav>
       <div class="nav-links">
-        <a>Sales</a> <a>Rentals</a> <a>Buildings</a> <a>Resources</a>
-        <a>Blog</a>
+        <a>Sales</a> <a>Rentals</a> <a>Buildings</a> <a>Resources</a> <a>Blog</a>
       </div>
       <div class="search">
         <input type="text" placeholder="e.g. address, building, agent" />
@@ -72,7 +74,10 @@
       </div>
     </footer>
   </body>
+
   <!-- Component Script Bundles -->
-  <!-- Image Carousel -->
-  <script src="http://localhost:3010/bundle.js"></script>
+  <script src="<%- carousel.APP_BUNDLE_URL %>"></script>
+  <script src="<%- details.APP_BUNDLE_URL %>"></script>
+  <script src="<%- description.APP_BUNDLE_URL %>"></script>
+  <script src="<%- similar.APP_BUNDLE_URL %>"></script>
 </html>

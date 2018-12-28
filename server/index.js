@@ -25,7 +25,7 @@ app.set('view engine', 'ejs');
 /////////////////////
 //  Render index.html from Template
 app.get('/:id(\\d+)/', (req, res) => {
-  res.render('../templates/index.ejs');
+  res.render('../templates/index.ejs', service_urls);
 });
 
 /////////////////////
@@ -39,15 +39,16 @@ app.use('/', express.static(staticPath));
 // Carousel
 app.get(service_urls.carousel.LOCAL_API_TARGET, (req, res) => {
   const itemId = req.params.id;
-  axios.get(service_urls.carousel.API_URL + itemId)
-  .then((result) => {
-    res.json(result.data);
-  })
-  .catch((err) => {
-    console.log('Error fetching from carousel API:',err);
-    res.sendStatus(500);
-  })
-})
+  axios
+    .get(service_urls.carousel.API_URL + itemId)
+    .then(result => {
+      res.json(result.data);
+    })
+    .catch(err => {
+      console.log('Error fetching from carousel API:', err);
+      res.sendStatus(500);
+    });
+});
 
 // Details
 
@@ -57,7 +58,7 @@ app.get(service_urls.carousel.LOCAL_API_TARGET, (req, res) => {
 
 ////////////////////////////////////////
 //  Instantate Server
-app.listen(PORT, (err) => {
+app.listen(PORT, err => {
   if (err) return console.log('Error starting server:', err);
   console.log('Succesfully started server on:', PORT);
-})
+});
