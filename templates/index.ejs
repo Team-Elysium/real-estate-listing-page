@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="icon" href="assets/images/favicon.ico">
+
+    <!-- Component Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="<%- carousel.STYLE_URL %>" />
+    <link rel="stylesheet" type="text/css" href="<%- details.STYLE_URL %>" />
+    <link rel="stylesheet" type="text/css" href="<%- description.STYLE_URL %>" />
+    <link rel="stylesheet" type="text/css" href="<%- similar.STYLE_URL %>" />
+
   </head>
   <body>
     <header>
       <img src="assets/images/street-breezy-logo.png" class="header-logo" />
       <div class="header-links">
-        <a>Advertise</a> <a>Recent Searches</a> <a>Sign In</a> <a>|</a>
-        <a>Register</a>
+        <a>Advertise</a> <a>Recent Searches</a> <a>Sign In</a> <a>|</a> <a>Register</a>
       </div>
     </header>
     <nav>
       <div class="nav-links">
-        <a>Sales</a> <a>Rentals</a> <a>Buildings</a> <a>Resources</a>
-        <a>Blog</a>
+        <a>Sales</a> <a>Rentals</a> <a>Buildings</a> <a>Resources</a> <a>Blog</a>
       </div>
       <div class="search">
         <input type="text" placeholder="e.g. address, building, agent" />
@@ -28,7 +34,8 @@
 
     <div class="main-content">
       <div class="carousel-description-container">
-        <article id="carousel-container">Carousel</article>
+        <article id="carousel">
+        </article>
         <article id="description-container">Description</article>
       </div>
 
@@ -63,8 +70,14 @@
       </span>
       <div class="footer-text">
         StreetBreezy 2018-2019 · Made In NYC · A Student Project in Front End
-        Design
+        Development
       </div>
     </footer>
   </body>
+
+  <!-- Component Script Bundles -->
+  <script src="<%- carousel.APP_BUNDLE_URL %>"></script>
+  <script src="<%- details.APP_BUNDLE_URL %>"></script>
+  <script src="<%- description.APP_BUNDLE_URL %>"></script>
+  <script src="<%- similar.APP_BUNDLE_URL %>"></script>
 </html>

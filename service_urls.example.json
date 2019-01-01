@@ -1,0 +1,25 @@
+// Save this file at the top of the project repo as service_urls.json and fill
+// in the URLs. Don't forget to delete this comment, comments aren't allowed in strict JSON!
+{
+  "carousel" : {
+    "API_URL": "http://service-domain-here/api/carousel/",
+    "LOCAL_API_TARGET": "/api/carousel/:id",
+    "STYLE_URL": "http://service-domain-here/carousel-style.css",
+    "APP_BUNDLE_URL": "http://service-domain-here/bundle.js"
+  },
+  "details" : {
+    "API_URL": "",
+    "STYLE_URL": "",
+    "APP_BUNDLE_URL": ""
+  },
+  "description" : {
+    "API_URL": "",
+    "STYLE_URL": "",
+    "APP_BUNDLE_URL": ""
+  },
+  "similar" : {
+    "API_URL": "",
+    "STYLE_URL": "",
+    "APP_BUNDLE_URL": ""
+  }
+}
