@@ -1,3 +1,9 @@
+/* ------------------------------------------------------------------------- */
+/*                                                                           */
+/*                           Desktop Styling                                 */
+/*                                                                           */
+/* ------------------------------------------------------------------------- */
+
 /* Entire Document */
 
 *:before,
@@ -43,7 +49,7 @@ header {
   color: white;
   position: fixed;
   z-index: 2;
-  height: 49px;
+  height: 50px;
   width: 100%;
   font-size: 11pt;
   padding: .2em;
@@ -64,6 +70,10 @@ header {
 
 .header-links a{
   margin: 0 1em;
+}
+
+.menu-icon{
+  display: none;
 }
 
 /* Nav Bar */
@@ -128,11 +138,9 @@ article {
   box-sizing: border-box;
 }
 
-.carousel-description-container {
-  width: 50%;
-  display: inline-block;
+#carousel-container {
+  margin: 0 0 0 2%;
 }
-
 
 #details-container {
   width: 35%;
@@ -140,7 +148,8 @@ article {
 }
 
 #description-container {
-  width: 100%;
+  margin: 0 0 0 10%;
+  float: left;
 }
 
 #similar-container {
@@ -197,4 +206,57 @@ footer {
 
 .footer-text {
   padding: 0em 0 4em 0;
+}
+
+/* ------------------------------------------------------------------------- */
+/*                                                                           */
+/*                            Mobile Styling                                 */
+/*                                                                           */
+/* ------------------------------------------------------------------------- */
+
+
+/* @media screen and (max-width: 979px) { */
+@media screen and (max-width: 1020px) {
+  #details-container {
+    width: 100%;
+    float: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .header-links{
+    display: none;
+  }
+
+  .header-logo {
+    margin: .5em 0 0 0;
+  }
+
+  .menu-icon{
+    display: inline-block;
+    float: left;
+    margin: .5em;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+/*                                                                           */
+/*                         Component Restyling                               */
+/*                                                                           */
+/* ------------------------------------------------------------------------- */
+
+/* These style rules overwrite styles  on components and are very likely to change and become irrelevant */
+
+.app {
+  background: white;
+}
+
+#entireDescriptionBox {
+  background: white;
 }
