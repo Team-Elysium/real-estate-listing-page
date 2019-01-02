@@ -48,7 +48,7 @@ header {
   background: rgb(3, 39, 101);
   color: white;
   position: fixed;
-  z-index: 2;
+  z-index: 1000;
   height: 50px;
   width: 100%;
   font-size: 11pt;
@@ -82,7 +82,7 @@ nav {
   background: white;
   position: fixed;
   top: 50px;
-  z-index: 2;
+  z-index: 1000;
   height: 50px;
   width: 100%;
   border-bottom: 1px solid lightgray;
