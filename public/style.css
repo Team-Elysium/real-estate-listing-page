@@ -260,3 +260,7 @@ footer {
 #entireDescriptionBox {
   background: white;
 }
+
+#similar-container {
+  overflow: scroll;
+}
