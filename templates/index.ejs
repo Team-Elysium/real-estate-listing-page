@@ -4,15 +4,52 @@
     <meta charset="utf-8" />
     <title>StreetBreezy Listing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="icon" href="assets/images/favicon.ico" />
+
+    <!-- Libraries Required for Components -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Component Stylesheets -->
     <link rel="stylesheet" type="text/css" href="<%- carousel.STYLE_URL %>" />
     <link rel="stylesheet" type="text/css" href="<%- details.STYLE_URL %>" />
-    <link rel="stylesheet" type="text/css" href="<%- description.STYLE_URL %>" />
+    <link rel="stylesheet" type="text/css" href="<%- description.STYLE_URL %>"/>
     <link rel="stylesheet" type="text/css" href="<%- similar.STYLE_URL %>" />
+
+    <!-- Listing Page Stylesheets -->
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 
   </head>
   <body>
@@ -34,8 +71,7 @@
 
     <div class="main-content">
       <div class="carousel-description-container">
-        <article id="carousel">
-        </article>
+        <article id="carousel"></article>
         <article id="description-container">Description</article>
       </div>
 
@@ -59,8 +95,8 @@
         <div>Ad Choice</div>
       </div>
       <div class="footer-column footer-column-four">
-        <img src="/assets/images/apple-store-logo.svg">
-        <img src="/assets/images/google-play-logo.svg">
+        <img src="/assets/images/apple-store-logo.svg" />
+        <img src="/assets/images/google-play-logo.svg" />
       </div>
       <div class="footer-column"></div>
       <span class="footer-social">
