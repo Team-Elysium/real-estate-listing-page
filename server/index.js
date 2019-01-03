@@ -25,7 +25,13 @@ app.set('view engine', 'ejs');
 /////////////////////
 //  Render index.html from Template
 app.get('/:id(\\d+)/', (req, res) => {
-  res.render('../templates/index.ejs', service_urls);
+  res.render(
+    path.join(__dirname, '../templates/index.ejs'),
+    service_urls,
+    err => {
+      res.sendStatus(500);
+    }
+  );
 });
 
 /////////////////////
