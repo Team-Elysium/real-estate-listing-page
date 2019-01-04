@@ -150,6 +150,7 @@ article {
 #description-container {
   margin: 0 0 0 10%;
   float: left;
+  width: 574px;
 }
 
 #similar-container {
@@ -238,6 +239,10 @@ footer {
     margin: .5em 0 0 0;
   }
 
+  #description-container {
+    width: 100%;
+  }
+
   .menu-icon{
     display: inline-block;
     float: left;
@@ -252,14 +257,6 @@ footer {
 /* ------------------------------------------------------------------------- */
 
 /* These style rules overwrite styles  on components and are very likely to change and become irrelevant */
-
-.app {
-  background: white;
-}
-
-#entireDescriptionBox {
-  background: white;
-}
 
 #similar-container {
   overflow: scroll;
