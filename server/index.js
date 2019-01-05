@@ -26,7 +26,7 @@ app.set('view engine', 'ejs');
 //  Render index.html from Template
 app.get('/:id(\\d+)/', (req, res) => {
   res.render(path.join(__dirname, '../templates/index.ejs'), service_urls);
-});
+  });
 
 /////////////////////
 //  Serve Other Static Assets
