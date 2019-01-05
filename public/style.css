@@ -136,6 +136,7 @@ article {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 #carousel-container {
@@ -153,7 +154,7 @@ article {
   width: 574px;
 }
 
-#similar-container {
+#similar {
   width: 90%;
 }
 
@@ -258,6 +259,10 @@ footer {
 
 /* These style rules overwrite styles  on components and are very likely to change and become irrelevant */
 
-#similar-container {
+#similar {
   overflow: scroll;
+}
+
+.details {
+  display: inline;
 }
