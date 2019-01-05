@@ -52,13 +52,13 @@ header {
   height: 50px;
   width: 100%;
   font-size: 11pt;
-  padding: .2em;
+  padding: 0.2em;
   cursor: default;
 }
 
 .header-logo {
   height: 30px;
-  margin: .5em 0 .25em 2em;
+  margin: 0.5em 0 0.25em 2em;
   display: inline-block;
 }
 
@@ -68,11 +68,11 @@ header {
   float: right;
 }
 
-.header-links a{
+.header-links a {
   margin: 0 1em;
 }
 
-.menu-icon{
+.menu-icon {
   display: none;
 }
 
@@ -102,23 +102,23 @@ nav {
 
 .search {
   float: right;
+  margin: 0.7em;
   display: inline-block;
-  margin: .7em;
 }
 
 .search input {
   border-radius: 1.5em;
   border: 1px solid rgb(223, 223, 223);
-  padding: .5em 1.5em;
+  padding: 0.5em 1.5em;
   width: 20em;
   font-size: 10pt;
   cursor: default;
 }
 
 .search img {
-  position: absolute;
+  position: relative;
   right: 28px;
-  top: 18px;
+  top: 3px;
 }
 
 /* Main Content */
@@ -126,36 +126,47 @@ nav {
 .main-content {
   padding-top: 110px;
   text-align: center;
-  margin: 0 1em;
+  margin: 0 auto;
+  width: 980px;
+  overflow: hidden;
 }
 
-article {
-  padding: 1em;
-  margin: .5em;
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 100%;
+.separator {
+  border-top: 1px solid #e6e6e6;
+  margin: 1em 0;
 }
+
+.max-width-container {
+  margin: auto;
+  width: 980px;
+}
+
+/* --------------------------------------- */
+/*          Component Containers           */
+/* --------------------------------------- */
 
 #carousel-container {
-  margin: 0 0 0 2%;
+  margin: 0 0 1em 0;
+  width: 60%;
+  float: left;
 }
 
 #details-container {
-  width: 35%;
+  width: 40%;
   float: right;
+  padding: 0 1em;
 }
 
 #description-container {
-  margin: 0 0 0 10%;
-  float: left;
-  width: 574px;
+  padding: 0 1.5em 0 0;
+  width: 60%;
 }
 
 #similar {
-  width: 90%;
+  clear: both;
+  width: 980px;
+  margin: 0 auto;
+  margin-bottom: 2em;
 }
 
 /* Footer */
@@ -167,6 +178,7 @@ footer {
   text-align: center;
   padding-top: 3em;
   cursor: default;
+  clear: both;
 }
 
 .footer-column {
@@ -176,7 +188,7 @@ footer {
   text-align: left;
 }
 
-.footer-column div{
+.footer-column div {
   margin: 2em;
 }
 
@@ -189,9 +201,9 @@ footer {
   padding-top: 1em;
 }
 
-.footer-column img{
+.footer-column img {
   height: 40px;
-  padding: .5em 0;
+  padding: 0.5em 0;
   display: block;
 }
 
@@ -216,7 +228,6 @@ footer {
 /*                                                                           */
 /* ------------------------------------------------------------------------- */
 
-
 /* @media screen and (max-width: 979px) { */
 @media screen and (max-width: 1020px) {
   #details-container {
@@ -232,22 +243,44 @@ footer {
     text-align: center;
   }
 
-  .header-links{
+  .menu-icon {
+    display: inline-block;
+    float: left;
+    margin: 0.5em;
+  }
+
+  .header-links {
     display: none;
   }
 
   .header-logo {
-    margin: .5em 0 0 0;
+    margin: 0.5em 0 0 0;
+  }
+
+  .max-width-container {
+    width: 100%;
+  }
+
+  /* --------------------------------------- */
+  /*              Components                 */
+  /* --------------------------------------- */
+
+  .main-content {
+    width: 100%;
+  }
+
+  #carousel-container {
+    width: 100%;
+    float: none;
   }
 
   #description-container {
     width: 100%;
+    padding: 0 4em;
   }
 
-  .menu-icon{
-    display: inline-block;
-    float: left;
-    margin: .5em;
+  .similar {
+    overflow: hidden;
   }
 }
 
@@ -259,10 +292,17 @@ footer {
 
 /* These style rules overwrite styles  on components and are very likely to change and become irrelevant */
 
-#similar {
-  overflow: scroll;
-}
-
 .details {
   display: inline;
+}
+
+@media screen and (max-width: 979px) {
+  .app {
+    width: 100%;
+    padding: 0 3em;
+  }
+
+  #postsCarousel {
+    overflow: scroll;
+  }
 }
