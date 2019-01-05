@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const path = require('path');
 const axios = require('axios');
+const compression = require('compression');
 
 ////////////////////////////////////////
 //  Remote Server Endpoints
@@ -18,6 +19,7 @@ let staticPath = path.join(__dirname, '../public');
 //  Apply Middleware
 app.use(morgan('dev'));
 app.use(bodyParser.json());
+app.use(compression());
 
 // Use EJS templating
 app.set('view engine', 'ejs');
@@ -25,8 +27,18 @@ app.set('view engine', 'ejs');
 /////////////////////
 //  Render index.html from Template
 app.get('/:id(\\d+)/', (req, res) => {
-  res.render(path.join(__dirname, '../templates/index.ejs'), service_urls);
-  });
+  res.render(
+    path.join(__dirname, '../templates/index.ejs'),
+    service_urls,
+    (err, html) => {
+      if (err) {
+        console.log('Error rendering HTML:', err);
+        return res.sendStatus(500);
+      }
+      res.send(html);
+    }
+  );
+});
 
 /////////////////////
 //  Serve Other Static Assets
