@@ -25,13 +25,7 @@ app.set('view engine', 'ejs');
 /////////////////////
 //  Render index.html from Template
 app.get('/:id(\\d+)/', (req, res) => {
-  res.render(
-    path.join(__dirname, '../templates/index.ejs'),
-    service_urls,
-    err => {
-      res.sendStatus(500);
-    }
-  );
+  res.render(path.join(__dirname, '../templates/index.ejs'), service_urls);
 });
 
 /////////////////////
@@ -73,7 +67,6 @@ app.get(service_urls.details.LOCAL_API_TARGET, (req, res) => {
 // Description
 app.get(service_urls.description.LOCAL_API_TARGET, (req, res) => {
   const itemId = req.params.id;
-  console.log('description requested:', itemId);
   axios
     .get(service_urls.description.API_URL + itemId)
     .then(result => {
