@@ -128,7 +128,6 @@ nav {
   text-align: center;
   margin: 0 auto;
   width: 980px;
-  overflow: hidden;
 }
 
 .separator {
@@ -266,7 +265,9 @@ footer {
   /* --------------------------------------- */
 
   .main-content {
+    padding-top: 70px;
     width: 100%;
+    overflow: hidden;
   }
 
   #carousel-container {
@@ -294,6 +295,10 @@ footer {
 
 .details {
   display: inline;
+}
+
+a:hover {
+  box-shadow: none;
 }
 
 @media screen and (max-width: 979px) {
