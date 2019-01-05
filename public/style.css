@@ -161,7 +161,7 @@ nav {
   width: 60%;
 }
 
-#similar {
+#similar-container {
   clear: both;
   width: 980px;
   margin: 0 auto;
@@ -279,10 +279,6 @@ footer {
     width: 100%;
     padding: 0 4em;
   }
-
-  .similar {
-    overflow: hidden;
-  }
 }
 
 /* ------------------------------------------------------------------------- */
@@ -291,7 +287,7 @@ footer {
 /*                                                                           */
 /* ------------------------------------------------------------------------- */
 
-/* These style rules overwrite styles  on components and are very likely to change and become irrelevant */
+/* These style rules overwrite styles on components and are very likely to change and become irrelevant */
 
 .details {
   display: inline;
