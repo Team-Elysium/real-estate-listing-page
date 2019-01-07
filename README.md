@@ -12,7 +12,7 @@ In this project, a team of four developers contributed components which make up 
 - [Project Architecture](#project-architecture)
 - [Development and Deployment](#development-and-deployment)
 - [Visual Comparison](#visual-comparison)
-- [Authors]()
+- [Authors](#authors)
 - [Acknowledgments](#acknowledgments)
 - [References](#references)
 
