@@ -147,7 +147,7 @@ As a front end development project, one key goal was to replicate the appearance
 - **Project Team** - *Each contributed components to listing page*
   - [Sujin Lee](https://github.com/slee1016) - Details Component
   - [Austin Joo](https://github.com/AustinJoo) - Description Component
-  - [Muhammad Mosaad](https://github.com/mowithafro) - Similar Listings Component
+  - [Muhammad Mosaad](https://github.com/moemosaad) - Similar Listings Component
 
 - **Technical Mentors** - *Provided instruction and guidance on JS fundamentals and project architecture*
   - [Joseph Martin](https://github.com/jpranaymartin)
