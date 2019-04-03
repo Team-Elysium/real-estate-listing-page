@@ -26,7 +26,7 @@ app.set('view engine', 'ejs');
 
 /////////////////////
 //  Render index.html from Template
-app.get('/:id(\\d+)/', (req, res) => {
+app.get('/:id([0-9]{1,2})/', (req, res) => {
   res.render(
     path.join(__dirname, '../templates/index.ejs'),
     service_urls,
@@ -38,6 +38,16 @@ app.get('/:id(\\d+)/', (req, res) => {
       res.send(html);
     }
   );
+});
+
+// Redirect requests for out of range ids and the root path to a random ID between 0 and 99
+app.get('/:id(\\d+)/', (req, res) => {
+  console.log('other number');
+  res.redirect(`/${Math.floor(100 * Math.random())}`);
+});
+
+app.get('/', (req, res) => {
+  res.redirect(`/${Math.floor(100 * Math.random())}`);
 });
 
 /////////////////////
