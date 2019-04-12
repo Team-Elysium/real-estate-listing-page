@@ -277,7 +277,7 @@ footer {
 
   #description-container {
     width: 100%;
-    padding: 0 4em;
+    padding: 0 1em;
   }
 }
 
@@ -300,10 +300,14 @@ a:hover {
 @media screen and (max-width: 979px) {
   .app {
     width: 100%;
-    padding: 0 3em;
+    padding: 0 1em;
   }
 
   #postsCarousel {
     overflow: scroll;
+  }
+
+  .footer-column div {
+    margin-left: 1em;
   }
 }
