@@ -124,7 +124,7 @@ nav {
 /* Main Content */
 
 .main-content {
-  padding-top: 110px;
+  padding-top: 118px;
   text-align: center;
   margin: 0 auto;
   width: 980px;
@@ -265,7 +265,7 @@ footer {
   /* --------------------------------------- */
 
   .main-content {
-    padding-top: 70px;
+    padding-top: 65px;
     width: 100%;
     overflow: hidden;
   }
