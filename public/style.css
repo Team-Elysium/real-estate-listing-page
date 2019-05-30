@@ -124,7 +124,7 @@ nav {
 /* Main Content */
 
 .main-content {
-  padding-top: 110px;
+  padding-top: 118px;
   text-align: center;
   margin: 0 auto;
   width: 980px;
@@ -253,7 +253,7 @@ footer {
   }
 
   .header-logo {
-    margin: 0.5em 0 0 0;
+    margin: 0.5em 0 0 -3em;
   }
 
   .max-width-container {
@@ -265,7 +265,7 @@ footer {
   /* --------------------------------------- */
 
   .main-content {
-    padding-top: 70px;
+    padding-top: 65px;
     width: 100%;
     overflow: hidden;
   }
@@ -277,7 +277,7 @@ footer {
 
   #description-container {
     width: 100%;
-    padding: 0 4em;
+    padding: 0 1em;
   }
 }
 
@@ -300,10 +300,14 @@ a:hover {
 @media screen and (max-width: 979px) {
   .app {
     width: 100%;
-    padding: 0 3em;
+    padding: 0 1em;
   }
 
   #postsCarousel {
     overflow: scroll;
+  }
+
+  .footer-column div {
+    margin-left: 1em;
   }
 }
