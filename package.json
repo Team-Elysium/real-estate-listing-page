@@ -5,7 +5,8 @@
   "main": "/server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-dev": "nodemon server/index.js -e js,ejs,json"
+    "start-dev": "nodemon server/index.js -e js,ejs,json",
+    "start": "node server/index.js -e js,ejs,json"
   },
   "repository": {
     "type": "git",
@@ -18,21 +19,22 @@
   },
   "homepage": "https://github.com/Team-Elysium/streeteasy-listing-proxy-server-jte#readme",
   "devDependencies": {
-    "eslint": "^5.10.0",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-react": "^7.11.1",
-    "prettier": "^1.15.3"
+    "eslint-config-prettier": "^3.6.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "prettier": "^1.17.1"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "body-parser": "^1.18.3",
-    "compression": "^1.7.3",
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "dotenv": "^6.2.0",
     "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "morgan": "^1.9.1"
   }
 }
